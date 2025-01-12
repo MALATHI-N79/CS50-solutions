@@ -1,0 +1,24 @@
+sort1 uses: BUBBLE SORT
+
+How do you know?:
+Bubble Sort is a sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated until the list is sorted.
+
+Time Complexity:
+Best Case: O(n) - This occurs when the array is already sorted. The algorithm only needs to pass through the list once to confirm it’s sorted.
+Average and Worst Case: O(n²) - In these cases, the algorithm needs to make multiple passes through the list, making it inefficient for large datasets.
+
+sort2 uses: MERGE SORT
+
+How do you know?:
+Merge Sort is a divide-and-conquer algorithm that divides the list into smaller sublists, sorts them, and then merges them back together.
+
+Time Complexity:
+Best, Average, and Worst Case: O(n log n) - This is because the list is always divided into halves, and merging the halves takes linear time. This makes Merge Sort very efficient for large datasets
+
+sort3 uses: SELECTION SORT
+
+How do you know?:
+Selection Sort works by repeatedly finding the minimum element from the unsorted part of the list and putting it at the beginning.
+
+Time Complexity:
+Best, Average, and Worst Case: O(n²) - This is because the algorithm always scans the entire list to find the minimum element, regardless of the initial order of the elements
