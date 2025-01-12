@@ -1,0 +1,11 @@
+
+HTML Tags: nav, button, h1, h2, p, a, form, input, label, script
+
+
+CSS Properties: font-family, color, margin-bottom, padding, font-weight
+
+
+JavaScript: Used a separate script file, script.js, to add an alert greeting when the button on the index page is clicked.
+
+
+Bootstrap: Used the navbar and button components for styling and responsive design.

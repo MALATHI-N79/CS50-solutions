@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function checkAnswer(button, correct) {
+            var result = document.querySelector('#result1');
+            if (correct) {
+                button.style.backgroundColor = 'green';
+                result.innerText = 'Correct!';
+            } else {
+                button.style.backgroundColor = 'red';
+                result.innerText = 'Incorrect';
+            }
+        }
+
+        function checkFreeResponse() {
+            var answer = document.querySelector('#freeResponse').value;
+            var result = document.querySelector('#result2');
+            var inputField = document.querySelector('#freeResponse');
+            if (answer.toLowerCase() === 'earth') {
+                inputField.style.backgroundColor = 'green';
+                result.innerText = 'Correct!';
+            } else {
+                inputField.style.backgroundColor = 'red';
+                result.innerText = 'Incorrect';
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the capital of France?</h3>
+                <button onclick="checkAnswer(this, false)">Berlin</button>
+                <button onclick="checkAnswer(this, true)">Paris</button>
+                <button onclick="checkAnswer(this, false)">Rome</button>
+                <p id="result1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What is the third planet from the Sun?</h3>
+                <input type="text" id="freeResponse">
+                <button onclick="checkFreeResponse()">Submit</button>
+                <p id="result2"></p>
+            </div>
+        </div>
+    </body>
+</html>
